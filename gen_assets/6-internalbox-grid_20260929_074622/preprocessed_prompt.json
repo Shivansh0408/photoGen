@@ -1,0 +1,167 @@
+{
+  "original_prompt": "Create me 6 boxes in a grid view 3 in each coloumn and 2 in each row in navy blue gradient colour adjust the hieght and width so it fits on the background, make the background light blue gradient, add the judges mallet in the bottom center make sure to adjust its size so it fits, make sure the box grid has a margin of 2px from each side",
+  "ordered_steps": [
+    {
+      "step": 1,
+      "name": "background",
+      "value": {
+        "asset": "PNGBG.svg",
+        "color": "#ADD8E6",
+        "gradient": {
+          "type": "linear",
+          "colors": [
+            "#ADD8E6",
+            "#DEEFF5"
+          ],
+          "direction": "vertical"
+        }
+      }
+    },
+    {
+      "step": 2,
+      "name": "object_count",
+      "value": {
+        "asset": "InternalBOX.svg",
+        "count": 6,
+        "source": "explicit user constraint"
+      }
+    },
+    {
+      "step": 3,
+      "name": "position",
+      "value": {
+        "layout": "grid",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "equal_spacing": false,
+        "spacing": null
+      }
+    },
+    {
+      "step": 4,
+      "name": "object_color",
+      "value": "#000080"
+    },
+    {
+      "step": 5,
+      "name": "allowed_extra_assets",
+      "value": [
+        "gavel-mallet_1789757934_8f8a1d1f.svg"
+      ]
+    },
+    {
+      "step": 6,
+      "name": "extra_asset_placement",
+      "value": {
+        "placements": [
+          {
+            "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+            "count": 1,
+            "vertical": "bottom",
+            "horizontal": "center",
+            "margin": null,
+            "full_width": false,
+            "source": "prompt"
+          }
+        ],
+        "primary_offset": null
+      }
+    }
+  ],
+  "canonical_spec": {
+    "background_asset": "PNGBG.svg",
+    "background_color": "#ADD8E6",
+    "background_gradient": {
+      "type": "linear",
+      "colors": [
+        "#ADD8E6",
+        "#DEEFF5"
+      ],
+      "direction": "vertical"
+    },
+    "primary_asset": "InternalBOX.svg",
+    "primary_count": 6,
+    "primary_count_source": "explicit user constraint",
+    "primary_color": "#000080",
+    "primary_gradient": {
+      "type": "linear",
+      "colors": [
+        "#000080",
+        "#6666B3"
+      ],
+      "direction": "vertical"
+    },
+    "primary_margin": 2.0,
+    "primary_fill": true,
+    "layout": "grid",
+    "horizontal_alignment": "center",
+    "vertical_alignment": "center",
+    "equal_spacing": false,
+    "spacing": null,
+    "grid_columns": 2,
+    "additional_assets": [
+      "gavel-mallet_1789757934_8f8a1d1f.svg"
+    ],
+    "asset_placements": [
+      {
+        "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+        "count": 1,
+        "vertical": "bottom",
+        "horizontal": "center",
+        "margin": null,
+        "full_width": false,
+        "source": "prompt"
+      }
+    ],
+    "primary_offset": null,
+    "prompt_chunks": 0,
+    "request_digest": null,
+    "strict_asset_set": true,
+    "interpretation": "The request was normalized into ordered template constraints.",
+    "hard_constraints": {
+      "background_asset": "PNGBG.svg",
+      "background_color": "#ADD8E6",
+      "background_gradient": {
+        "type": "linear",
+        "colors": [
+          "#ADD8E6",
+          "#DEEFF5"
+        ],
+        "direction": "vertical"
+      },
+      "primary_asset": "InternalBOX.svg",
+      "primary_count": 6,
+      "primary_color": "#000080",
+      "primary_gradient": {
+        "type": "linear",
+        "colors": [
+          "#000080",
+          "#6666B3"
+        ],
+        "direction": "vertical"
+      },
+      "grid_columns": 2,
+      "primary_margin": 2.0,
+      "primary_fill": true,
+      "layout": "grid",
+      "horizontal_alignment": "center",
+      "vertical_alignment": "center",
+      "additional_assets": [
+        "gavel-mallet_1789757934_8f8a1d1f.svg"
+      ],
+      "strict_asset_set": true,
+      "asset_placements": [
+        {
+          "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+          "count": 1,
+          "vertical": "bottom",
+          "horizontal": "center",
+          "margin": null,
+          "full_width": false,
+          "source": "prompt"
+        }
+      ],
+      "prompt_chunks": 0
+    }
+  }
+}

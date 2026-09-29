@@ -1,0 +1,26 @@
+{
+  "default_color": "White",
+  "items": [
+    {
+      "id": "heading",
+      "role": "heading",
+      "label": "Heading",
+      "content": "Justice for all",
+      "placement": "top",
+      "color": "White",
+      "style": "bold",
+      "resolved_text": "Justice for all"
+    },
+    {
+      "id": "box-1-text",
+      "role": "box",
+      "label": "Text in box-1",
+      "content": "Everyone is equal in the eyes of the law",
+      "placement": "center",
+      "color": "white",
+      "style": "",
+      "box": "box-1",
+      "resolved_text": "Everyone is equal in the eyes of the law"
+    }
+  ]
+}

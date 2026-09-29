@@ -1,0 +1,688 @@
+{
+  "schema_version": "1.0",
+  "template_name": "5-internalbox-vertical-stack",
+  "description": "Exactly 5 InternalBOX.svg element(s) in a vertical stack layout, using the original asset color on a #800080 background.",
+  "canvas": {
+    "width": 1080.0,
+    "height": 1920.0,
+    "background_color": "#800080"
+  },
+  "elements": [
+    {
+      "id": "background",
+      "asset": "PNGBG.svg",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1080.0,
+      "height": 1920.0,
+      "z_index": -1000,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#800080",
+        "stroke": "none",
+        "opacity": 1.0,
+        "gradient": {
+          "type": "linear",
+          "colors": [
+            "#800080",
+            "#B366B3"
+          ],
+          "direction": "vertical"
+        }
+      },
+      "generated_asset": "assets/000-background-pngbg.svg",
+      "source_dimensions": {
+        "width": 1080.0,
+        "height": 1920.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-1",
+      "asset": "InternalBOX.svg",
+      "x": 54.0,
+      "y": 248.0,
+      "width": 972.0,
+      "height": 297.6,
+      "z_index": 1,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#C7B8EA",
+        "stroke": "#FFFFFF",
+        "stroke_width": 2.0,
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/001-internalbox-1-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-2",
+      "asset": "InternalBOX.svg",
+      "x": 54.0,
+      "y": 577.6,
+      "width": 972.0,
+      "height": 297.6,
+      "z_index": 2,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#C7B8EA",
+        "stroke": "#FFFFFF",
+        "stroke_width": 2.0,
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/002-internalbox-2-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-3",
+      "asset": "InternalBOX.svg",
+      "x": 54.0,
+      "y": 907.2,
+      "width": 972.0,
+      "height": 297.6,
+      "z_index": 3,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#C7B8EA",
+        "stroke": "#FFFFFF",
+        "stroke_width": 2.0,
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/003-internalbox-3-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-4",
+      "asset": "InternalBOX.svg",
+      "x": 54.0,
+      "y": 1236.8000000000002,
+      "width": 972.0,
+      "height": 297.6,
+      "z_index": 4,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#C7B8EA",
+        "stroke": "#FFFFFF",
+        "stroke_width": 2.0,
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/004-internalbox-4-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-5",
+      "asset": "InternalBOX.svg",
+      "x": 54.0,
+      "y": 1566.4,
+      "width": 972.0,
+      "height": 297.6,
+      "z_index": 5,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#C7B8EA",
+        "stroke": "#FFFFFF",
+        "stroke_width": 2.0,
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/005-internalbox-5-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "mooncrescentleft-1",
+      "asset": "moonCrescentLeft.svg",
+      "x": 89.712,
+      "y": 283.712,
+      "width": 226.17600000000002,
+      "height": 226.17600000000002,
+      "z_index": 101,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": true,
+      "style": {},
+      "placement": {
+        "vertical": "inside",
+        "horizontal": "left",
+        "margin": 56.0,
+        "full_width": false,
+        "container": "primary",
+        "justify": "left",
+        "per_box": "spread",
+        "container_id": "internalbox-1"
+      },
+      "generated_asset": "assets/006-mooncrescentleft-1-mooncrescentleft.svg",
+      "source_dimensions": {
+        "width": 640.0,
+        "height": 640.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "mooncrescentright-1",
+      "asset": "moonCrescentRight.svg",
+      "x": 89.712,
+      "y": 613.312,
+      "width": 226.17600000000002,
+      "height": 226.17600000000002,
+      "z_index": 102,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": true,
+      "style": {},
+      "placement": {
+        "vertical": "inside",
+        "horizontal": "left",
+        "margin": 56.0,
+        "full_width": false,
+        "container": "primary",
+        "justify": "left",
+        "per_box": "spread",
+        "container_id": "internalbox-2"
+      },
+      "generated_asset": "assets/007-mooncrescentright-1-mooncrescentright.svg",
+      "source_dimensions": {
+        "width": 640.0,
+        "height": 640.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "moonfull-1",
+      "asset": "moonFull.svg",
+      "x": 89.712,
+      "y": 942.912,
+      "width": 226.17600000000002,
+      "height": 226.17600000000002,
+      "z_index": 103,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": true,
+      "style": {},
+      "placement": {
+        "vertical": "inside",
+        "horizontal": "left",
+        "margin": 56.0,
+        "full_width": false,
+        "container": "primary",
+        "justify": "left",
+        "per_box": "spread",
+        "container_id": "internalbox-3"
+      },
+      "generated_asset": "assets/008-moonfull-1-moonfull.svg",
+      "source_dimensions": {
+        "width": 640.0,
+        "height": 640.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "moonhalfleft-1",
+      "asset": "moonhalfLeft.svg",
+      "x": 89.712,
+      "y": 1272.5120000000002,
+      "width": 226.17600000000002,
+      "height": 226.17600000000002,
+      "z_index": 104,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": true,
+      "style": {},
+      "placement": {
+        "vertical": "inside",
+        "horizontal": "left",
+        "margin": 56.0,
+        "full_width": false,
+        "container": "primary",
+        "justify": "left",
+        "per_box": "spread",
+        "container_id": "internalbox-4"
+      },
+      "generated_asset": "assets/009-moonhalfleft-1-moonhalfleft.svg",
+      "source_dimensions": {
+        "width": 640.0,
+        "height": 640.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "moonhalfright-1",
+      "asset": "moonhalfRight.svg",
+      "x": 89.712,
+      "y": 1602.112,
+      "width": 226.17600000000002,
+      "height": 226.17600000000002,
+      "z_index": 105,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": true,
+      "style": {},
+      "placement": {
+        "vertical": "inside",
+        "horizontal": "left",
+        "margin": 56.0,
+        "full_width": false,
+        "container": "primary",
+        "justify": "left",
+        "per_box": "spread",
+        "container_id": "internalbox-5"
+      },
+      "generated_asset": "assets/010-moonhalfright-1-moonhalfright.svg",
+      "source_dimensions": {
+        "width": 640.0,
+        "height": 640.0,
+        "unit": "px"
+      }
+    }
+  ],
+  "metadata": {
+    "user_prompt": "Create me a voilet and purple gradient background, add  5 boxes to it make sure the width is 90% of the width colour it light purple, add all the 5 moon assests inside the box on the left hand side of the box in the starting, make sure to leave space at the top for heading adjust the hieght of the background if nesscary to fit",
+    "planner": "ollama",
+    "model": "llama3.2:3b",
+    "schema_file": "E:\\Projects2026\\Photo generator\\Schema\\asset_dictonary\\svg_dictionary.py",
+    "created_at_utc": "2026-09-29T09:13:11.769108+00:00",
+    "enforced_additional_assets": [
+      "moonCrescentLeft.svg",
+      "moonCrescentRight.svg",
+      "moonFull.svg",
+      "moonhalfLeft.svg",
+      "moonhalfRight.svg"
+    ],
+    "ollama_sizing": {
+      "InternalBOX.svg": {
+        "size": null,
+        "fill": "#C7B8EA"
+      },
+      "moonCrescentLeft.svg": {
+        "size": null,
+        "fill": null
+      },
+      "moonCrescentRight.svg": {
+        "size": null,
+        "fill": null
+      },
+      "moonFull.svg": {
+        "size": null,
+        "fill": null
+      },
+      "moonhalfLeft.svg": {
+        "size": null,
+        "fill": null
+      },
+      "moonhalfRight.svg": {
+        "size": null,
+        "fill": null
+      },
+      "PNGBG.svg": {
+        "size": null,
+        "fill": "#800080"
+      }
+    },
+    "preprocessing_enforced": true,
+    "enforced_primary_count": 5,
+    "enforced_background_color": "#800080",
+    "enforced_primary_color": null
+  },
+  "layout_grid": {
+    "margin": 56.0,
+    "gutter": 32.0,
+    "columns": 12,
+    "column_width": 51.33,
+    "content": [
+      54.0,
+      248.0,
+      972.0,
+      1616.0
+    ],
+    "header": [
+      56.0,
+      56.0,
+      968.0,
+      192.0
+    ]
+  },
+  "preprocessing": {
+    "original_prompt": "Create me a voilet and purple gradient background, add  5 boxes to it make sure the width is 90% of the width colour it light purple, add all the 5 moon assests inside the box on the left hand side of the box in the starting, make sure to leave space at the top for heading adjust the hieght of the background if nesscary to fit",
+    "ordered_steps": [
+      {
+        "step": 1,
+        "name": "background",
+        "value": {
+          "asset": "PNGBG.svg",
+          "color": "#800080",
+          "gradient": {
+            "type": "linear",
+            "colors": [
+              "#800080",
+              "#B366B3"
+            ],
+            "direction": "vertical"
+          }
+        }
+      },
+      {
+        "step": 2,
+        "name": "object_count",
+        "value": {
+          "asset": "InternalBOX.svg",
+          "count": 5,
+          "source": "explicit user constraint"
+        }
+      },
+      {
+        "step": 3,
+        "name": "position",
+        "value": {
+          "layout": "vertical_stack",
+          "horizontal_alignment": "center",
+          "vertical_alignment": "center",
+          "equal_spacing": false,
+          "spacing": null
+        }
+      },
+      {
+        "step": 4,
+        "name": "object_color",
+        "value": null
+      },
+      {
+        "step": 5,
+        "name": "allowed_extra_assets",
+        "value": [
+          "moonCrescentLeft.svg",
+          "moonCrescentRight.svg",
+          "moonFull.svg",
+          "moonhalfLeft.svg",
+          "moonhalfRight.svg"
+        ]
+      },
+      {
+        "step": 6,
+        "name": "extra_asset_placement",
+        "value": {
+          "placements": [
+            {
+              "asset": "moonCrescentLeft.svg",
+              "count": 1,
+              "vertical": "inside",
+              "horizontal": "left",
+              "margin": null,
+              "full_width": false,
+              "source": "prompt",
+              "container": "primary",
+              "justify": "left",
+              "per_box": "spread"
+            },
+            {
+              "asset": "moonCrescentRight.svg",
+              "count": 1,
+              "vertical": "inside",
+              "horizontal": "left",
+              "margin": null,
+              "full_width": false,
+              "source": "prompt",
+              "container": "primary",
+              "justify": "left",
+              "per_box": "spread"
+            },
+            {
+              "asset": "moonFull.svg",
+              "count": 1,
+              "vertical": "inside",
+              "horizontal": "left",
+              "margin": null,
+              "full_width": false,
+              "source": "prompt",
+              "container": "primary",
+              "justify": "left",
+              "per_box": "spread"
+            },
+            {
+              "asset": "moonhalfLeft.svg",
+              "count": 1,
+              "vertical": "inside",
+              "horizontal": "left",
+              "margin": null,
+              "full_width": false,
+              "source": "prompt",
+              "container": "primary",
+              "justify": "left",
+              "per_box": "spread"
+            },
+            {
+              "asset": "moonhalfRight.svg",
+              "count": 1,
+              "vertical": "inside",
+              "horizontal": "left",
+              "margin": null,
+              "full_width": false,
+              "source": "prompt",
+              "container": "primary",
+              "justify": "left",
+              "per_box": "spread"
+            }
+          ],
+          "primary_offset": null
+        }
+      }
+    ],
+    "canonical_spec": {
+      "background_asset": "PNGBG.svg",
+      "background_color": "#800080",
+      "background_gradient": {
+        "type": "linear",
+        "colors": [
+          "#800080",
+          "#B366B3"
+        ],
+        "direction": "vertical"
+      },
+      "primary_asset": "InternalBOX.svg",
+      "primary_count": 5,
+      "primary_count_source": "explicit user constraint",
+      "primary_color": null,
+      "primary_gradient": null,
+      "primary_margin": null,
+      "primary_fill": true,
+      "primary_width_fraction": 0.9,
+      "header_requested": true,
+      "canvas_can_grow": true,
+      "layout": "vertical_stack",
+      "horizontal_alignment": "center",
+      "vertical_alignment": "center",
+      "equal_spacing": false,
+      "spacing": null,
+      "grid_columns": null,
+      "additional_assets": [
+        "moonCrescentLeft.svg",
+        "moonCrescentRight.svg",
+        "moonFull.svg",
+        "moonhalfLeft.svg",
+        "moonhalfRight.svg"
+      ],
+      "asset_placements": [
+        {
+          "asset": "moonCrescentLeft.svg",
+          "count": 1,
+          "vertical": "inside",
+          "horizontal": "left",
+          "margin": null,
+          "full_width": false,
+          "source": "prompt",
+          "container": "primary",
+          "justify": "left",
+          "per_box": "spread"
+        },
+        {
+          "asset": "moonCrescentRight.svg",
+          "count": 1,
+          "vertical": "inside",
+          "horizontal": "left",
+          "margin": null,
+          "full_width": false,
+          "source": "prompt",
+          "container": "primary",
+          "justify": "left",
+          "per_box": "spread"
+        },
+        {
+          "asset": "moonFull.svg",
+          "count": 1,
+          "vertical": "inside",
+          "horizontal": "left",
+          "margin": null,
+          "full_width": false,
+          "source": "prompt",
+          "container": "primary",
+          "justify": "left",
+          "per_box": "spread"
+        },
+        {
+          "asset": "moonhalfLeft.svg",
+          "count": 1,
+          "vertical": "inside",
+          "horizontal": "left",
+          "margin": null,
+          "full_width": false,
+          "source": "prompt",
+          "container": "primary",
+          "justify": "left",
+          "per_box": "spread"
+        },
+        {
+          "asset": "moonhalfRight.svg",
+          "count": 1,
+          "vertical": "inside",
+          "horizontal": "left",
+          "margin": null,
+          "full_width": false,
+          "source": "prompt",
+          "container": "primary",
+          "justify": "left",
+          "per_box": "spread"
+        }
+      ],
+      "primary_offset": null,
+      "prompt_chunks": 0,
+      "request_digest": null,
+      "strict_asset_set": true,
+      "interpretation": "The request was normalized into ordered template constraints.",
+      "hard_constraints": {
+        "background_asset": "PNGBG.svg",
+        "background_color": "#800080",
+        "background_gradient": {
+          "type": "linear",
+          "colors": [
+            "#800080",
+            "#B366B3"
+          ],
+          "direction": "vertical"
+        },
+        "primary_asset": "InternalBOX.svg",
+        "primary_count": 5,
+        "primary_fill": true,
+        "primary_width_fraction": 0.9,
+        "header_requested": true,
+        "canvas_can_grow": true,
+        "layout": "vertical_stack",
+        "additional_assets": [
+          "moonCrescentLeft.svg",
+          "moonCrescentRight.svg",
+          "moonFull.svg",
+          "moonhalfLeft.svg",
+          "moonhalfRight.svg"
+        ],
+        "strict_asset_set": true,
+        "asset_placements": [
+          {
+            "asset": "moonCrescentLeft.svg",
+            "count": 1,
+            "vertical": "inside",
+            "horizontal": "left",
+            "margin": null,
+            "full_width": false,
+            "source": "prompt",
+            "container": "primary",
+            "justify": "left",
+            "per_box": "spread"
+          },
+          {
+            "asset": "moonCrescentRight.svg",
+            "count": 1,
+            "vertical": "inside",
+            "horizontal": "left",
+            "margin": null,
+            "full_width": false,
+            "source": "prompt",
+            "container": "primary",
+            "justify": "left",
+            "per_box": "spread"
+          },
+          {
+            "asset": "moonFull.svg",
+            "count": 1,
+            "vertical": "inside",
+            "horizontal": "left",
+            "margin": null,
+            "full_width": false,
+            "source": "prompt",
+            "container": "primary",
+            "justify": "left",
+            "per_box": "spread"
+          },
+          {
+            "asset": "moonhalfLeft.svg",
+            "count": 1,
+            "vertical": "inside",
+            "horizontal": "left",
+            "margin": null,
+            "full_width": false,
+            "source": "prompt",
+            "container": "primary",
+            "justify": "left",
+            "per_box": "spread"
+          },
+          {
+            "asset": "moonhalfRight.svg",
+            "count": 1,
+            "vertical": "inside",
+            "horizontal": "left",
+            "margin": null,
+            "full_width": false,
+            "source": "prompt",
+            "container": "primary",
+            "justify": "left",
+            "per_box": "spread"
+          }
+        ],
+        "prompt_chunks": 0
+      },
+      "layout_system": {
+        "margin": 56.0,
+        "gutter": 32.0,
+        "columns": 12,
+        "column_width": 51.333333333333336,
+        "header_height": 192.0
+      }
+    }
+  }
+}

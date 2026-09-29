@@ -1,0 +1,398 @@
+{
+  "schema_version": "1.0",
+  "template_name": "1-internalbox-freeform",
+  "description": "Exactly 1 InternalBOX.svg element(s) in a freeform layout, using #000080 on a #ADD8E6 background.",
+  "canvas": {
+    "width": 1080.0,
+    "height": 1920.0,
+    "background_color": "#ADD8E6"
+  },
+  "elements": [
+    {
+      "id": "background",
+      "asset": "PNGBG.svg",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1080.0,
+      "height": 1920.0,
+      "z_index": -1000,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#ADD8E6",
+        "stroke": "none",
+        "opacity": 1.0,
+        "gradient": {
+          "type": "linear",
+          "colors": [
+            "#ADD8E6",
+            "#DEEFF5"
+          ],
+          "direction": "vertical"
+        }
+      },
+      "generated_asset": "assets/000-background-pngbg.svg",
+      "source_dimensions": {
+        "width": 1080.0,
+        "height": 1920.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-1",
+      "asset": "InternalBOX.svg",
+      "x": 270.0,
+      "y": 182.72,
+      "width": 480.0,
+      "height": 420.0,
+      "z_index": 1,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#000080",
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/001-internalbox-1-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "topbracket-1",
+      "asset": "TopBracket.svg",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1080.0,
+      "height": 56.0,
+      "z_index": 500,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {},
+      "placement": {
+        "vertical": "top",
+        "horizontal": "center",
+        "margin": 0.0,
+        "full_width": true
+      },
+      "generated_asset": "assets/002-topbracket-1-topbracket.svg",
+      "source_dimensions": {
+        "width": 1080.0,
+        "height": 56.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "gavel-mallet-1",
+      "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+      "x": 108.0,
+      "y": 1013.0,
+      "width": 864.0,
+      "height": 864.0,
+      "z_index": 510,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": true,
+      "style": {},
+      "placement": {
+        "vertical": "bottom",
+        "horizontal": "center",
+        "margin": 43.0,
+        "full_width": false
+      },
+      "generated_asset": "assets/003-gavel-mallet-1-gavel-mallet-1789757934-8f8a1d1f.svg",
+      "source_dimensions": {
+        "width": 880.0,
+        "height": 880.0,
+        "unit": "px"
+      }
+    }
+  ],
+  "metadata": {
+    "user_prompt": "Create me a light blue gradient background, add a border to the top of the page, add one box just 30px below the top border and keep the box navy blue in colour algin this box on the center of the Y-axis, add a mallet image at the below of the image also algin this image to the center of the Y-axis",
+    "planner": "ollama",
+    "model": "llama3.2:3b",
+    "schema_file": "E:\\Projects2026\\Photo generator\\Schema\\asset_dictonary\\svg_dictionary.py",
+    "created_at_utc": "2026-09-29T06:40:15.648275+00:00",
+    "enforced_additional_assets": [
+      "TopBracket.svg",
+      "gavel-mallet_1789757934_8f8a1d1f.svg"
+    ],
+    "preprocessing_enforced": true,
+    "enforced_primary_count": 1,
+    "enforced_background_color": "#ADD8E6",
+    "enforced_primary_color": "#000080",
+    "text_request": {
+      "default_color": "White",
+      "items": [
+        {
+          "id": "heading",
+          "role": "heading",
+          "label": "Heading",
+          "content": "Justice for all",
+          "placement": "top",
+          "color": "White",
+          "style": "bold",
+          "resolved_text": "Justice for all"
+        },
+        {
+          "id": "box-1-text",
+          "role": "box",
+          "label": "Text in box-1",
+          "content": "Everyone is equal in the eyes of the law",
+          "placement": "center",
+          "color": "white",
+          "style": "",
+          "box": "box-1",
+          "resolved_text": "Everyone is equal in the eyes of the law"
+        }
+      ]
+    },
+    "text_layout": {
+      "original_positions": {
+        "internalbox-1": [
+          270.0,
+          86.0
+        ]
+      },
+      "object_adjustments": [
+        {
+          "id": "internalbox-1",
+          "label": "box-1",
+          "dx": 0.0,
+          "dy": 96.72
+        }
+      ]
+    }
+  },
+  "preprocessing": {
+    "original_prompt": "Create me a light blue gradient background, add a border to the top of the page, add one box just 30px below the top border and keep the box navy blue in colour algin this box on the center of the Y-axis, add a mallet image at the below of the image also algin this image to the center of the Y-axis",
+    "ordered_steps": [
+      {
+        "step": 1,
+        "name": "background",
+        "value": {
+          "asset": "PNGBG.svg",
+          "color": "#ADD8E6",
+          "gradient": {
+            "type": "linear",
+            "colors": [
+              "#ADD8E6",
+              "#DEEFF5"
+            ],
+            "direction": "vertical"
+          }
+        }
+      },
+      {
+        "step": 2,
+        "name": "object_count",
+        "value": {
+          "asset": "InternalBOX.svg",
+          "count": 1,
+          "source": "explicit user constraint"
+        }
+      },
+      {
+        "step": 3,
+        "name": "position",
+        "value": {
+          "layout": "freeform",
+          "horizontal_alignment": "center",
+          "vertical_alignment": "center",
+          "equal_spacing": false,
+          "spacing": null
+        }
+      },
+      {
+        "step": 4,
+        "name": "object_color",
+        "value": "#000080"
+      },
+      {
+        "step": 5,
+        "name": "allowed_extra_assets",
+        "value": [
+          "TopBracket.svg",
+          "gavel-mallet_1789757934_8f8a1d1f.svg"
+        ]
+      },
+      {
+        "step": 6,
+        "name": "extra_asset_placement",
+        "value": {
+          "placements": [
+            {
+              "asset": "TopBracket.svg",
+              "count": 1,
+              "vertical": "top",
+              "horizontal": "center",
+              "margin": null,
+              "full_width": true,
+              "source": "prompt"
+            },
+            {
+              "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+              "count": 1,
+              "vertical": "bottom",
+              "horizontal": "center",
+              "margin": null,
+              "full_width": false,
+              "source": "prompt"
+            }
+          ],
+          "primary_offset": {
+            "relation": "below",
+            "asset": "TopBracket.svg",
+            "gap": 30.0,
+            "source": "prompt"
+          }
+        }
+      }
+    ],
+    "canonical_spec": {
+      "background_asset": "PNGBG.svg",
+      "background_color": "#ADD8E6",
+      "background_gradient": {
+        "type": "linear",
+        "colors": [
+          "#ADD8E6",
+          "#DEEFF5"
+        ],
+        "direction": "vertical"
+      },
+      "primary_asset": "InternalBOX.svg",
+      "primary_count": 1,
+      "primary_count_source": "explicit user constraint",
+      "primary_color": "#000080",
+      "layout": "freeform",
+      "horizontal_alignment": "center",
+      "vertical_alignment": "center",
+      "equal_spacing": false,
+      "spacing": null,
+      "grid_columns": null,
+      "additional_assets": [
+        "TopBracket.svg",
+        "gavel-mallet_1789757934_8f8a1d1f.svg"
+      ],
+      "asset_placements": [
+        {
+          "asset": "TopBracket.svg",
+          "count": 1,
+          "vertical": "top",
+          "horizontal": "center",
+          "margin": null,
+          "full_width": true,
+          "source": "prompt"
+        },
+        {
+          "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+          "count": 1,
+          "vertical": "bottom",
+          "horizontal": "center",
+          "margin": null,
+          "full_width": false,
+          "source": "prompt"
+        }
+      ],
+      "primary_offset": {
+        "relation": "below",
+        "asset": "TopBracket.svg",
+        "gap": 30.0,
+        "source": "prompt"
+      },
+      "strict_asset_set": true,
+      "interpretation": "The request was normalized into ordered template constraints.",
+      "hard_constraints": {
+        "background_asset": "PNGBG.svg",
+        "background_color": "#ADD8E6",
+        "background_gradient": {
+          "type": "linear",
+          "colors": [
+            "#ADD8E6",
+            "#DEEFF5"
+          ],
+          "direction": "vertical"
+        },
+        "primary_asset": "InternalBOX.svg",
+        "primary_count": 1,
+        "primary_color": "#000080",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "additional_assets": [
+          "TopBracket.svg",
+          "gavel-mallet_1789757934_8f8a1d1f.svg"
+        ],
+        "strict_asset_set": true,
+        "asset_placements": [
+          {
+            "asset": "TopBracket.svg",
+            "count": 1,
+            "vertical": "top",
+            "horizontal": "center",
+            "margin": null,
+            "full_width": true,
+            "source": "prompt"
+          },
+          {
+            "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+            "count": 1,
+            "vertical": "bottom",
+            "horizontal": "center",
+            "margin": null,
+            "full_width": false,
+            "source": "prompt"
+          }
+        ],
+        "primary_offset": {
+          "relation": "below",
+          "asset": "TopBracket.svg",
+          "gap": 30.0,
+          "source": "prompt"
+        }
+      }
+    }
+  },
+  "text_overlays": [
+    {
+      "id": "heading",
+      "role": "heading",
+      "text": "Justice for all",
+      "lines": [
+        "Justice for all"
+      ],
+      "x": 290.39,
+      "y": 68.96,
+      "width": 499.22,
+      "height": 92.16,
+      "font_size": 72.0,
+      "color": "white",
+      "align": "center",
+      "vertical_align": "top",
+      "rotation": 0.0,
+      "weight": "bold",
+      "placement": "top"
+    },
+    {
+      "id": "box-1-text",
+      "role": "box",
+      "text": "Everyone is equal in the eyes of the law",
+      "lines": [
+        "Everyone is equal",
+        "in the eyes of the",
+        "law"
+      ],
+      "x": 317.07,
+      "y": 308.24,
+      "width": 385.86,
+      "height": 168.96,
+      "font_size": 44.0,
+      "color": "white",
+      "align": "center",
+      "vertical_align": "top",
+      "rotation": 0.0,
+      "weight": "bold",
+      "placement": "center"
+    }
+  ]
+}

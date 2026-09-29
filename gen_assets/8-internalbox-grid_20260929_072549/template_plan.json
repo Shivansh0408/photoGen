@@ -1,0 +1,642 @@
+{
+  "schema_version": "1.0",
+  "template_name": "8-internalbox-grid",
+  "description": "Exactly 8 InternalBOX.svg element(s) in a grid layout, using the original asset color on a #000080 background.",
+  "canvas": {
+    "width": 1080.0,
+    "height": 1920.0,
+    "background_color": "#000080"
+  },
+  "elements": [
+    {
+      "id": "background",
+      "asset": "PNGBG.svg",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1080.0,
+      "height": 1920.0,
+      "z_index": -1000,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#000080",
+        "stroke": "none",
+        "opacity": 1.0,
+        "gradient": {
+          "type": "linear",
+          "colors": [
+            "#000080",
+            "#6666B3"
+          ],
+          "direction": "vertical"
+        }
+      },
+      "generated_asset": "assets/000-background-pngbg.svg",
+      "source_dimensions": {
+        "width": 1080.0,
+        "height": 1920.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-1",
+      "asset": "InternalBOX.svg",
+      "x": 36.0,
+      "y": 194.0,
+      "width": 288.0,
+      "height": 252.0,
+      "z_index": 1,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#FFFFFF",
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/001-internalbox-1-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-2",
+      "asset": "InternalBOX.svg",
+      "x": 396.0,
+      "y": 194.0,
+      "width": 288.0,
+      "height": 252.0,
+      "z_index": 2,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#FFFFFF",
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/002-internalbox-2-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-3",
+      "asset": "InternalBOX.svg",
+      "x": 756.0,
+      "y": 194.0,
+      "width": 288.0,
+      "height": 252.0,
+      "z_index": 3,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#FFFFFF",
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/003-internalbox-3-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-4",
+      "asset": "InternalBOX.svg",
+      "x": 36.0,
+      "y": 834.0,
+      "width": 288.0,
+      "height": 252.0,
+      "z_index": 4,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#FFFFFF",
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/004-internalbox-4-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-5",
+      "asset": "InternalBOX.svg",
+      "x": 396.0,
+      "y": 834.0,
+      "width": 288.0,
+      "height": 252.0,
+      "z_index": 5,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#FFFFFF",
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/005-internalbox-5-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-6",
+      "asset": "InternalBOX.svg",
+      "x": 756.0,
+      "y": 834.0,
+      "width": 288.0,
+      "height": 252.0,
+      "z_index": 6,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#FFFFFF",
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/006-internalbox-6-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-7",
+      "asset": "InternalBOX.svg",
+      "x": 36.0,
+      "y": 1517.0,
+      "width": 288.0,
+      "height": 252.0,
+      "z_index": 7,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#FFFFFF",
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/007-internalbox-7-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "internalbox-8",
+      "asset": "InternalBOX.svg",
+      "x": 396.0,
+      "y": 1517.0,
+      "width": 288.0,
+      "height": 252.0,
+      "z_index": 8,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": false,
+      "style": {
+        "fill": "#FFFFFF",
+        "opacity": 1.0
+      },
+      "generated_asset": "assets/008-internalbox-8-internalbox.svg",
+      "source_dimensions": {
+        "width": 480.0,
+        "height": 420.0,
+        "unit": "px"
+      }
+    },
+    {
+      "id": "gavel-mallet-1",
+      "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+      "x": 108.0,
+      "y": 1056.0,
+      "width": 864.0,
+      "height": 864.0,
+      "z_index": 500,
+      "rotation": 0.0,
+      "preserve_aspect_ratio": true,
+      "style": {},
+      "placement": {
+        "vertical": "bottom",
+        "horizontal": "center",
+        "margin": 43.0,
+        "full_width": false
+      },
+      "generated_asset": "assets/009-gavel-mallet-1-gavel-mallet-1789757934-8f8a1d1f.svg",
+      "source_dimensions": {
+        "width": 880.0,
+        "height": 880.0,
+        "unit": "px"
+      }
+    }
+  ],
+  "metadata": {
+    "user_prompt": "Create me 8 boxes in a grid view 4 in each coloumn and 2 in each row in navy blue gradient colour adjust the hieght and width so it fits on the background, make the background light blue gradient, add the judges mallet in the bottom center make sure to adjust its size so it fits, make sure the box grid has a margin of 10px from each side",
+    "planner": "ollama",
+    "model": "llama3.2:3b",
+    "schema_file": "E:\\Projects2026\\Photo generator\\Schema\\asset_dictonary\\svg_dictionary.py",
+    "created_at_utc": "2026-09-29T07:25:49.108406+00:00",
+    "enforced_additional_assets": [
+      "gavel-mallet_1789757934_8f8a1d1f.svg"
+    ],
+    "ollama_sizing": {},
+    "preprocessing_enforced": true,
+    "enforced_primary_count": 8,
+    "enforced_background_color": "#000080",
+    "enforced_primary_color": null,
+    "layout_source": "deterministic_fallback",
+    "fallback_reason": "Ollama did not answer within 90 seconds.",
+    "text_request": {
+      "default_color": "White",
+      "items": [
+        {
+          "id": "box-1-text",
+          "role": "box",
+          "label": "Text in box-1",
+          "content": "Wear clean, formal, and respectful clothing. Your appearance should reflect seriousness and respect for the court proceedings.",
+          "placement": "center",
+          "color": "white",
+          "style": "",
+          "font": "Friendly Humanist",
+          "box": "box-1",
+          "resolved_text": "Wear clean, formal, and respectful clothing. Your appearance should reflect seriousness and respect for the court proceedings."
+        },
+        {
+          "id": "box-2-text",
+          "role": "box",
+          "label": "Text in box-2",
+          "content": "Reach the court before your scheduled time. This allows you to complete formalities, find your courtroom, and prepare calmly.",
+          "placement": "center",
+          "color": "white",
+          "style": "",
+          "font": "Friendly Humanist",
+          "box": "box-2",
+          "resolved_text": "Reach the court before your scheduled time. This allows you to complete formalities, find your courtroom, and prepare calmly."
+        },
+        {
+          "id": "box-3-text",
+          "role": "box",
+          "label": "Text in box-3",
+          "content": "Speak politely and use respectful terms when communicating with the judge, lawyers, and court staff.",
+          "placement": "center",
+          "color": "white",
+          "style": "",
+          "font": "Friendly Humanist",
+          "box": "box-3",
+          "resolved_text": "Speak politely and use respectful terms when communicating with the judge, lawyers, and court staff."
+        },
+        {
+          "id": "box-4-text",
+          "role": "box",
+          "label": "Text in box-4",
+          "content": "Remain calm, avoid unnecessary movements, and do not interrupt ongoing discussions or proceedings.",
+          "placement": "center",
+          "color": "white",
+          "style": "",
+          "font": "Friendly Humanist",
+          "box": "box-4",
+          "resolved_text": "Remain calm, avoid unnecessary movements, and do not interrupt ongoing discussions or proceedings."
+        },
+        {
+          "id": "box-6-text",
+          "role": "box",
+          "label": "Text in box-6",
+          "content": "Pay attention to statements, questions, and instructions given by the judge and other parties involved.",
+          "placement": "center",
+          "color": "default",
+          "style": "",
+          "font": "Friendly Humanist",
+          "box": "box-6",
+          "resolved_text": "Pay attention to statements, questions, and instructions given by the judge and other parties involved."
+        }
+      ],
+      "default_font": "Friendly Humanist"
+    },
+    "text_layout": {
+      "original_positions": {
+        "internalbox-7": [
+          36.0,
+          1474.0
+        ],
+        "internalbox-8": [
+          396.0,
+          1474.0
+        ],
+        "gavel-mallet-1": [
+          108.0,
+          1013.0
+        ]
+      },
+      "object_adjustments": [
+        {
+          "id": "internalbox-7",
+          "label": "box-7",
+          "dx": 0.0,
+          "dy": 43.0
+        },
+        {
+          "id": "internalbox-8",
+          "label": "box-8",
+          "dx": 0.0,
+          "dy": 43.0
+        },
+        {
+          "id": "gavel-mallet-1",
+          "label": "gavel-mallet-1",
+          "dx": 0.0,
+          "dy": 43.0
+        }
+      ]
+    }
+  },
+  "preprocessing": {
+    "original_prompt": "Create me 8 boxes in a grid view 4 in each coloumn and 2 in each row in navy blue gradient colour adjust the hieght and width so it fits on the background, make the background light blue gradient, add the judges mallet in the bottom center make sure to adjust its size so it fits, make sure the box grid has a margin of 10px from each side",
+    "ordered_steps": [
+      {
+        "step": 1,
+        "name": "background",
+        "value": {
+          "asset": "PNGBG.svg",
+          "color": "#000080",
+          "gradient": {
+            "type": "linear",
+            "colors": [
+              "#000080",
+              "#6666B3"
+            ],
+            "direction": "vertical"
+          }
+        }
+      },
+      {
+        "step": 2,
+        "name": "object_count",
+        "value": {
+          "asset": "InternalBOX.svg",
+          "count": 8,
+          "source": "explicit user constraint"
+        }
+      },
+      {
+        "step": 3,
+        "name": "position",
+        "value": {
+          "layout": "grid",
+          "horizontal_alignment": "center",
+          "vertical_alignment": "center",
+          "equal_spacing": false,
+          "spacing": null
+        }
+      },
+      {
+        "step": 4,
+        "name": "object_color",
+        "value": null
+      },
+      {
+        "step": 5,
+        "name": "allowed_extra_assets",
+        "value": [
+          "gavel-mallet_1789757934_8f8a1d1f.svg"
+        ]
+      },
+      {
+        "step": 6,
+        "name": "extra_asset_placement",
+        "value": {
+          "placements": [
+            {
+              "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+              "count": 1,
+              "vertical": "bottom",
+              "horizontal": "center",
+              "margin": null,
+              "full_width": false,
+              "source": "prompt"
+            }
+          ],
+          "primary_offset": null
+        }
+      }
+    ],
+    "canonical_spec": {
+      "background_asset": "PNGBG.svg",
+      "background_color": "#000080",
+      "background_gradient": {
+        "type": "linear",
+        "colors": [
+          "#000080",
+          "#6666B3"
+        ],
+        "direction": "vertical"
+      },
+      "primary_asset": "InternalBOX.svg",
+      "primary_count": 8,
+      "primary_count_source": "explicit user constraint",
+      "primary_color": null,
+      "layout": "grid",
+      "horizontal_alignment": "center",
+      "vertical_alignment": "center",
+      "equal_spacing": false,
+      "spacing": null,
+      "grid_columns": null,
+      "additional_assets": [
+        "gavel-mallet_1789757934_8f8a1d1f.svg"
+      ],
+      "asset_placements": [
+        {
+          "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+          "count": 1,
+          "vertical": "bottom",
+          "horizontal": "center",
+          "margin": null,
+          "full_width": false,
+          "source": "prompt"
+        }
+      ],
+      "primary_offset": null,
+      "prompt_chunks": 0,
+      "request_digest": null,
+      "strict_asset_set": true,
+      "interpretation": "The request was normalized into ordered template constraints.",
+      "hard_constraints": {
+        "background_asset": "PNGBG.svg",
+        "background_color": "#000080",
+        "background_gradient": {
+          "type": "linear",
+          "colors": [
+            "#000080",
+            "#6666B3"
+          ],
+          "direction": "vertical"
+        },
+        "primary_asset": "InternalBOX.svg",
+        "primary_count": 8,
+        "layout": "grid",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "additional_assets": [
+          "gavel-mallet_1789757934_8f8a1d1f.svg"
+        ],
+        "strict_asset_set": true,
+        "asset_placements": [
+          {
+            "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+            "count": 1,
+            "vertical": "bottom",
+            "horizontal": "center",
+            "margin": null,
+            "full_width": false,
+            "source": "prompt"
+          }
+        ],
+        "prompt_chunks": 0
+      }
+    }
+  },
+  "text_overlays": [
+    {
+      "id": "box-1-text",
+      "role": "box",
+      "text": "Wear clean, formal, and respectful clothing. Your appearance should reflect seriousness and respect for the court proceedings.",
+      "lines": [
+        "Wear clean, formal,",
+        "and respectful",
+        "clothing. Your",
+        "appearance should",
+        "reflect seriousness",
+        "and respect for the",
+        "court proceedings."
+      ],
+      "x": 71.72,
+      "y": 218.83,
+      "width": 216.57,
+      "height": 202.33,
+      "font_size": 22.58,
+      "color": "white",
+      "align": "center",
+      "vertical_align": "top",
+      "rotation": 0.0,
+      "weight": "700",
+      "font": "Friendly Humanist",
+      "font_family": "'Trebuchet MS', 'Lucida Grande', 'Segoe UI', sans-serif",
+      "letter_spacing": 0.0,
+      "line_height": 1.28,
+      "placement": "center"
+    },
+    {
+      "id": "box-2-text",
+      "role": "box",
+      "text": "Reach the court before your scheduled time. This allows you to complete formalities, find your courtroom, and prepare calmly.",
+      "lines": [
+        "Reach the court",
+        "before your scheduled",
+        "time. This allows you",
+        "to complete",
+        "formalities, find your",
+        "courtroom, and",
+        "prepare calmly."
+      ],
+      "x": 417.82,
+      "y": 218.83,
+      "width": 244.37,
+      "height": 202.33,
+      "font_size": 22.58,
+      "color": "white",
+      "align": "center",
+      "vertical_align": "top",
+      "rotation": 0.0,
+      "weight": "700",
+      "font": "Friendly Humanist",
+      "font_family": "'Trebuchet MS', 'Lucida Grande', 'Segoe UI', sans-serif",
+      "letter_spacing": 0.0,
+      "line_height": 1.28,
+      "placement": "center"
+    },
+    {
+      "id": "box-3-text",
+      "role": "box",
+      "text": "Speak politely and use respectful terms when communicating with the judge, lawyers, and court staff.",
+      "lines": [
+        "Speak politely and",
+        "use respectful terms",
+        "when communicating",
+        "with the judge,",
+        "lawyers, and court",
+        "staff."
+      ],
+      "x": 780.01,
+      "y": 233.29,
+      "width": 239.98,
+      "height": 173.43,
+      "font_size": 22.58,
+      "color": "white",
+      "align": "center",
+      "vertical_align": "top",
+      "rotation": 0.0,
+      "weight": "700",
+      "font": "Friendly Humanist",
+      "font_family": "'Trebuchet MS', 'Lucida Grande', 'Segoe UI', sans-serif",
+      "letter_spacing": 0.0,
+      "line_height": 1.28,
+      "placement": "center"
+    },
+    {
+      "id": "box-4-text",
+      "role": "box",
+      "text": "Remain calm, avoid unnecessary movements, and do not interrupt ongoing discussions or proceedings.",
+      "lines": [
+        "Remain calm, avoid",
+        "unnecessary",
+        "movements, and do",
+        "not interrupt",
+        "ongoing discussions",
+        "or proceedings."
+      ],
+      "x": 57.79,
+      "y": 865.75,
+      "width": 244.41,
+      "height": 188.51,
+      "font_size": 24.55,
+      "color": "white",
+      "align": "center",
+      "vertical_align": "top",
+      "rotation": 0.0,
+      "weight": "700",
+      "font": "Friendly Humanist",
+      "font_family": "'Trebuchet MS', 'Lucida Grande', 'Segoe UI', sans-serif",
+      "letter_spacing": 0.0,
+      "line_height": 1.28,
+      "placement": "center"
+    },
+    {
+      "id": "box-6-text",
+      "role": "box",
+      "text": "Pay attention to statements, questions, and instructions given by the judge and other parties involved.",
+      "lines": [
+        "Pay attention to",
+        "statements,",
+        "questions, and",
+        "instructions given by",
+        "the judge and other",
+        "parties involved."
+      ],
+      "x": 784.16,
+      "y": 873.29,
+      "width": 231.69,
+      "height": 173.43,
+      "font_size": 22.58,
+      "color": "white",
+      "align": "center",
+      "vertical_align": "top",
+      "rotation": 0.0,
+      "weight": "700",
+      "font": "Friendly Humanist",
+      "font_family": "'Trebuchet MS', 'Lucida Grande', 'Segoe UI', sans-serif",
+      "letter_spacing": 0.0,
+      "line_height": 1.28,
+      "placement": "center"
+    }
+  ]
+}

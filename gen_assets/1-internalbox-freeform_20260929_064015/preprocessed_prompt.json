@@ -1,0 +1,188 @@
+{
+  "original_prompt": "Create me a light blue gradient background, add a border to the top of the page, add one box just 30px below the top border and keep the box navy blue in colour algin this box on the center of the Y-axis, add a mallet image at the below of the image also algin this image to the center of the Y-axis",
+  "ordered_steps": [
+    {
+      "step": 1,
+      "name": "background",
+      "value": {
+        "asset": "PNGBG.svg",
+        "color": "#ADD8E6",
+        "gradient": {
+          "type": "linear",
+          "colors": [
+            "#ADD8E6",
+            "#DEEFF5"
+          ],
+          "direction": "vertical"
+        }
+      }
+    },
+    {
+      "step": 2,
+      "name": "object_count",
+      "value": {
+        "asset": "InternalBOX.svg",
+        "count": 1,
+        "source": "explicit user constraint"
+      }
+    },
+    {
+      "step": 3,
+      "name": "position",
+      "value": {
+        "layout": "freeform",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "equal_spacing": false,
+        "spacing": null
+      }
+    },
+    {
+      "step": 4,
+      "name": "object_color",
+      "value": "#000080"
+    },
+    {
+      "step": 5,
+      "name": "allowed_extra_assets",
+      "value": [
+        "TopBracket.svg",
+        "gavel-mallet_1789757934_8f8a1d1f.svg"
+      ]
+    },
+    {
+      "step": 6,
+      "name": "extra_asset_placement",
+      "value": {
+        "placements": [
+          {
+            "asset": "TopBracket.svg",
+            "count": 1,
+            "vertical": "top",
+            "horizontal": "center",
+            "margin": null,
+            "full_width": true,
+            "source": "prompt"
+          },
+          {
+            "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+            "count": 1,
+            "vertical": "bottom",
+            "horizontal": "center",
+            "margin": null,
+            "full_width": false,
+            "source": "prompt"
+          }
+        ],
+        "primary_offset": {
+          "relation": "below",
+          "asset": "TopBracket.svg",
+          "gap": 30.0,
+          "source": "prompt"
+        }
+      }
+    }
+  ],
+  "canonical_spec": {
+    "background_asset": "PNGBG.svg",
+    "background_color": "#ADD8E6",
+    "background_gradient": {
+      "type": "linear",
+      "colors": [
+        "#ADD8E6",
+        "#DEEFF5"
+      ],
+      "direction": "vertical"
+    },
+    "primary_asset": "InternalBOX.svg",
+    "primary_count": 1,
+    "primary_count_source": "explicit user constraint",
+    "primary_color": "#000080",
+    "layout": "freeform",
+    "horizontal_alignment": "center",
+    "vertical_alignment": "center",
+    "equal_spacing": false,
+    "spacing": null,
+    "grid_columns": null,
+    "additional_assets": [
+      "TopBracket.svg",
+      "gavel-mallet_1789757934_8f8a1d1f.svg"
+    ],
+    "asset_placements": [
+      {
+        "asset": "TopBracket.svg",
+        "count": 1,
+        "vertical": "top",
+        "horizontal": "center",
+        "margin": null,
+        "full_width": true,
+        "source": "prompt"
+      },
+      {
+        "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+        "count": 1,
+        "vertical": "bottom",
+        "horizontal": "center",
+        "margin": null,
+        "full_width": false,
+        "source": "prompt"
+      }
+    ],
+    "primary_offset": {
+      "relation": "below",
+      "asset": "TopBracket.svg",
+      "gap": 30.0,
+      "source": "prompt"
+    },
+    "strict_asset_set": true,
+    "interpretation": "The request was normalized into ordered template constraints.",
+    "hard_constraints": {
+      "background_asset": "PNGBG.svg",
+      "background_color": "#ADD8E6",
+      "background_gradient": {
+        "type": "linear",
+        "colors": [
+          "#ADD8E6",
+          "#DEEFF5"
+        ],
+        "direction": "vertical"
+      },
+      "primary_asset": "InternalBOX.svg",
+      "primary_count": 1,
+      "primary_color": "#000080",
+      "horizontal_alignment": "center",
+      "vertical_alignment": "center",
+      "additional_assets": [
+        "TopBracket.svg",
+        "gavel-mallet_1789757934_8f8a1d1f.svg"
+      ],
+      "strict_asset_set": true,
+      "asset_placements": [
+        {
+          "asset": "TopBracket.svg",
+          "count": 1,
+          "vertical": "top",
+          "horizontal": "center",
+          "margin": null,
+          "full_width": true,
+          "source": "prompt"
+        },
+        {
+          "asset": "gavel-mallet_1789757934_8f8a1d1f.svg",
+          "count": 1,
+          "vertical": "bottom",
+          "horizontal": "center",
+          "margin": null,
+          "full_width": false,
+          "source": "prompt"
+        }
+      ],
+      "primary_offset": {
+        "relation": "below",
+        "asset": "TopBracket.svg",
+        "gap": 30.0,
+        "source": "prompt"
+      }
+    }
+  }
+}
