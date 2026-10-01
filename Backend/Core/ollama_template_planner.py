@@ -394,27 +394,43 @@ def _asset_search_text(filename: str, asset: dict[str, Any]) -> str:
     ).lower()
 
 
+def _asset_name_words(filename: str, asset: dict[str, Any]) -> set[str]:
+    """Whole words of an asset's filename, name and usage ('InternalBOX' -> internal, box).
+
+    Whole words keep 'creditcard' from counting as a card and 'boxer' as a box.
+    """
+
+    text = " ".join((Path(filename).stem, str(asset.get("name") or ""), str(asset.get("usage") or "")))
+    words = re.findall(r"[A-Z]+(?![a-z])|[A-Z]?[a-z]+|\d+", text)
+    return {word.lower() for word in words} | {word.lower()[:-1] for word in words
+                                                if len(word) > 3 and word.lower().endswith("s")}
+
+
 def _find_asset_by_keywords(
     assets: dict[str, dict[str, Any]],
     keywords: tuple[str, ...],
     *,
     excluded: set[str] | None = None,
 ) -> str | None:
-    """Select the best approved asset for a semantic role."""
+    """Select the best approved asset for a semantic role.
+
+    Keywords must appear as whole words. On a tie the plain single-colour shape wins
+    (InternalBOX over a card illustration, PNGBG over a scenic background).
+    """
 
     excluded = excluded or set()
-    ranked: list[tuple[int, str]] = []
+    ranked: list[tuple[int, bool, str]] = []
     for filename, asset in assets.items():
         if filename in excluded:
             continue
-        searchable = _asset_search_text(filename, asset)
-        score = sum(1 for keyword in keywords if keyword in searchable)
+        words = _asset_name_words(filename, asset)
+        score = sum(1 for keyword in keywords if keyword in words)
         if score:
-            ranked.append((score, filename))
+            ranked.append((score, bool(asset.get("recolorable")), filename))
     if not ranked:
         return None
-    ranked.sort(key=lambda item: (-item[0], item[1].lower()))
-    return ranked[0][1]
+    ranked.sort(key=lambda item: (-item[0], not item[1], item[2].lower()))
+    return ranked[0][2]
 
 
 def _extract_color_mentions(prompt: str) -> list[dict[str, Any]]:
@@ -570,8 +586,7 @@ def extract_hard_constraints(
     other_asset_words = set().union(*(
         _asset_words(filename, asset)
         for filename, asset in assets.items()
-        if not re.search(r"box|card|panel|background|canvas|backdrop",
-                         _asset_search_text(filename, asset))
+        if not _asset_name_words(filename, asset) & {"box", "card", "panel", "background", "canvas", "backdrop"}
     )) if assets else set()
     other_spans = [
         m.span() for m in re.finditer(r"[a-z]{3,}", lowered)
@@ -1191,8 +1206,10 @@ def select_additional_assets(
     canvas_width, canvas_height = _default_canvas_size(assets)
     local_matches = _match_assets_by_usage(user_prompt, assets, excluded)
     _narrow_to_qualified_assets(user_prompt, assets, local_matches)
+    # Assets named outright ('moonFull') keep the position of their name, so the
+    # words around it ('inside each box on the left') still place them.
     for filename in hard_constraints.get("additional_assets") or []:
-        local_matches.setdefault(filename, -1)
+        local_matches.setdefault(filename, user_prompt.lower().find(Path(filename).stem.lower()))
 
     candidates = [
         entry for entry in build_asset_catalog(assets) if entry["filename"] not in excluded

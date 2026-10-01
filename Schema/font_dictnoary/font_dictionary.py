@@ -129,5 +129,115 @@ FONT_DICTIONARY = {
         "width_factor": 1.15,
         "heading_case": None,
         "file": None
+    },
+    "Heavy Black": {
+        "name": "Heavy Black",
+        "usage": "Extra-bold, wide headlines for banners, thumbnails and bold statements",
+        "family": "'Arial Black', 'Segoe UI Black', 'Arial Bold', sans-serif",
+        "weights": {"heading": "900", "subheading": "900", "box": "900", "text": "400"},
+        "letter_spacing": {"heading": 0.0, "body": 0.0},
+        "line_height": 1.15,
+        "width_factor": 1.25,
+        "heading_case": None,
+        "file": None
+    },
+    "Light Minimal": {
+        "name": "Light Minimal",
+        "usage": "Thin, airy type for minimal, premium and lifestyle designs",
+        "family": "'Segoe UI Light', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif",
+        "weights": {"heading": "300", "subheading": "300", "box": "400", "text": "300"},
+        "letter_spacing": {"heading": 0.06, "body": 0.01},
+        "line_height": 1.3,
+        "width_factor": 0.97,
+        "heading_case": "upper",
+        "file": None
+    },
+    "Newsroom Gothic": {
+        "name": "Newsroom Gothic",
+        "usage": "Punchy, compact headlines for news, blogs and event flyers",
+        "family": "'Franklin Gothic Medium', 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif",
+        "weights": {"heading": "400", "subheading": "400", "box": "400", "text": "400"},
+        "letter_spacing": {"heading": 0.01, "body": 0.0},
+        "line_height": 1.2,
+        "width_factor": 0.92,
+        "heading_case": None,
+        "file": None
+    },
+    "Soft Sans": {
+        "name": "Soft Sans",
+        "usage": "Soft, compact everyday sans for presentations, office and product copy",
+        "family": "Calibri, Carlito, 'Segoe UI', Arial, sans-serif",
+        "weights": {"heading": "700", "subheading": "400", "box": "700", "text": "400"},
+        "letter_spacing": {"heading": 0.0, "body": 0.0},
+        "line_height": 1.25,
+        "width_factor": 0.9,
+        "heading_case": None,
+        "file": None
+    },
+    "Humanist Rounded": {
+        "name": "Humanist Rounded",
+        "usage": "Gentle, rounded feel for kids, health, wellness and non-profit graphics",
+        "family": "Candara, Corbel, 'Trebuchet MS', 'Segoe UI', sans-serif",
+        "weights": {"heading": "700", "subheading": "400", "box": "700", "text": "400"},
+        "letter_spacing": {"heading": 0.01, "body": 0.0},
+        "line_height": 1.28,
+        "width_factor": 0.95,
+        "heading_case": None,
+        "file": None
+    },
+    "Book Serif": {
+        "name": "Book Serif",
+        "usage": "Sturdy, screen-friendly serif for reports, books and long-form text",
+        "family": "Cambria, Caladea, 'Sitka Text', Georgia, serif",
+        "weights": {"heading": "700", "subheading": "400", "box": "700", "text": "400"},
+        "letter_spacing": {"heading": 0.0, "body": 0.0},
+        "line_height": 1.3,
+        "width_factor": 1.0,
+        "heading_case": None,
+        "file": None
+    },
+    "Warm Serif": {
+        "name": "Warm Serif",
+        "usage": "Warm, literary serif for food, travel, culture and storytelling posts",
+        "family": "Constantia, 'Sitka Heading', 'Palatino Linotype', Georgia, serif",
+        "weights": {"heading": "700", "subheading": "400", "box": "700", "text": "400"},
+        "letter_spacing": {"heading": 0.02, "body": 0.0},
+        "line_height": 1.3,
+        "width_factor": 1.02,
+        "heading_case": None,
+        "file": None
+    },
+    "Handwritten Marker": {
+        "name": "Handwritten Marker",
+        "usage": "Casual marker style for notes, quotes, kids and fun social posts",
+        "family": "'Ink Free', 'Segoe Print', 'Comic Sans MS', cursive",
+        "weights": {"heading": "400", "subheading": "400", "box": "400", "text": "400"},
+        "letter_spacing": {"heading": 0.01, "body": 0.0},
+        "line_height": 1.3,
+        "width_factor": 1.05,
+        "heading_case": None,
+        "file": None
+    },
+    "Script Signature": {
+        "name": "Script Signature",
+        "usage": "Flowing script for greetings, invitations and signature accents (headings only)",
+        "family": "'Segoe Script', 'Brush Script MT', 'Lucida Handwriting', cursive",
+        "weights": {"heading": "400", "subheading": "400", "box": "400", "text": "400"},
+        "letter_spacing": {"heading": 0.0, "body": 0.0},
+        "line_height": 1.35,
+        "width_factor": 1.3,
+        "heading_case": None,
+        "file": None
+    },
+    "Code Mono": {
+        "name": "Code Mono",
+        "usage": "Modern developer-style monospace for tech, code snippets and dashboards",
+        "family": "'Cascadia Code', 'Cascadia Mono', Consolas, 'Courier New', monospace",
+        "weights": {"heading": "700", "subheading": "600", "box": "700", "text": "400"},
+        "letter_spacing": {"heading": 0.0, "body": 0.0},
+        "line_height": 1.3,
+        "width_factor": 1.12,
+        "heading_case": None,
+        "file": None
     }
 }

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" font-family="Segoe UI, Arial, sans-serif">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="40.0" y="294.4" width="1000.0" height="297.9" rx="6" fill="none" stroke="#9AA0A6" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="540.0" y="443.34999999999997" font-size="40" text-anchor="middle" dominant-baseline="middle" fill="#9AA0A6" fill-opacity="0.35" stroke="#FFFFFF" stroke-width="6" paint-order="stroke">cell 1</text>
+<rect x="40.0" y="616.3" width="1000.0" height="297.9" rx="6" fill="none" stroke="#9AA0A6" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="540.0" y="765.25" font-size="40" text-anchor="middle" dominant-baseline="middle" fill="#9AA0A6" fill-opacity="0.35" stroke="#FFFFFF" stroke-width="6" paint-order="stroke">cell 2</text>
+<rect x="40.0" y="938.2" width="1000.0" height="297.9" rx="6" fill="none" stroke="#9AA0A6" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="540.0" y="1087.15" font-size="40" text-anchor="middle" dominant-baseline="middle" fill="#9AA0A6" fill-opacity="0.35" stroke="#FFFFFF" stroke-width="6" paint-order="stroke">cell 3</text>
+<rect x="40.0" y="1260.2" width="1000.0" height="297.9" rx="6" fill="none" stroke="#9AA0A6" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="540.0" y="1409.15" font-size="40" text-anchor="middle" dominant-baseline="middle" fill="#9AA0A6" fill-opacity="0.35" stroke="#FFFFFF" stroke-width="6" paint-order="stroke">cell 4</text>
+<rect x="40.0" y="1582.1" width="1000.0" height="297.9" rx="6" fill="none" stroke="#9AA0A6" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="540.0" y="1731.05" font-size="40" text-anchor="middle" dominant-baseline="middle" fill="#9AA0A6" fill-opacity="0.35" stroke="#FFFFFF" stroke-width="6" paint-order="stroke">cell 5</text>
+<rect x="40" y="40" width="1000.0" height="230.4" rx="6" fill="none" stroke="#9AA0A6" stroke-width="3" stroke-dasharray="10 8"/>
+<rect x="40.0" y="294.4" width="1000.0" height="297.9" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3"/>
+<text x="540.0" y="320.4" font-size="26" text-anchor="middle" dominant-baseline="middle" fill="#1A1A1A" stroke="#FFFFFF" stroke-width="6" paint-order="stroke">box-1 - text center center</text>
+<rect x="40.0" y="616.3" width="1000.0" height="297.9" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3"/>
+<text x="540.0" y="642.3" font-size="26" text-anchor="middle" dominant-baseline="middle" fill="#1A1A1A" stroke="#FFFFFF" stroke-width="6" paint-order="stroke">box-2 - text center center</text>
+<rect x="40.0" y="938.2" width="1000.0" height="297.9" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3"/>
+<text x="540.0" y="964.2" font-size="26" text-anchor="middle" dominant-baseline="middle" fill="#1A1A1A" stroke="#FFFFFF" stroke-width="6" paint-order="stroke">box-3 - text center center</text>
+<rect x="40.0" y="1260.2" width="1000.0" height="297.9" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3"/>
+<text x="540.0" y="1286.2" font-size="26" text-anchor="middle" dominant-baseline="middle" fill="#1A1A1A" stroke="#FFFFFF" stroke-width="6" paint-order="stroke">box-4 - text center center</text>
+<rect x="40" y="40" width="1000.0" height="230.4" rx="6" fill="none" stroke="#1A73E8" stroke-width="3" stroke-dasharray="4 6"/>
+<text x="540.0" y="155.2" font-size="34" text-anchor="middle" dominant-baseline="middle" fill="#1A73E8" stroke="#FFFFFF" stroke-width="6" paint-order="stroke">HEADING (center)</text>
+<rect x="40.0" y="1582.1" width="1000.0" height="297.9" rx="6" fill="none" stroke="#188038" stroke-width="3" stroke-dasharray="4 6"/>
+<text x="540.0" y="1731.05" font-size="26" text-anchor="middle" dominant-baseline="middle" fill="#188038" stroke="#FFFFFF" stroke-width="6" paint-order="stroke">text-1 (center)</text>
+</svg>

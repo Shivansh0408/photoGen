@@ -23,9 +23,14 @@ import argparse
 import base64
 import json
 import math
+import os
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
 import xml.etree.ElementTree as ET
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -433,7 +438,77 @@ def render_template(
     rendered_png: Path | None = None
     if png_path is not None:
         rendered_png = render_png(svg_bytes, png_path)
+    save_timestamped_png(final_svg_path, svg_bytes, plan)
     return final_svg_path, rendered_png
+
+
+# --------------------------------------------------------------------------- timestamped PNG copy
+
+BROWSER_CANDIDATES = (
+    Path(os.environ.get("ProgramFiles(x86)", r"C:\Program Files (x86)")) / "Microsoft/Edge/Application/msedge.exe",
+    Path(os.environ.get("ProgramFiles", r"C:\Program Files")) / "Microsoft/Edge/Application/msedge.exe",
+    Path(os.environ.get("ProgramFiles", r"C:\Program Files")) / "Google/Chrome/Application/chrome.exe",
+    Path(os.environ.get("ProgramFiles(x86)", r"C:\Program Files (x86)")) / "Google/Chrome/Application/chrome.exe",
+)
+
+
+def timestamped_png_path(directory: Path, moment: datetime | None = None) -> Path:
+    """HHMMDDMM.png: an image made at 17:10 on 29 September is 17102909.png."""
+
+    stem = (moment or datetime.now()).strftime("%H%M%d%m")
+    path = directory / f"{stem}.png"
+    number = 2
+    while path.exists():  # Two images in the same minute: 17102909_2.png.
+        path = directory / f"{stem}_{number}.png"
+        number += 1
+    return path
+
+
+def _find_browser() -> Path | None:
+    for name in ("msedge", "chrome", "google-chrome", "chromium", "chromium-browser"):
+        found = shutil.which(name)
+        if found:
+            return Path(found)
+    return next((path for path in BROWSER_CANDIDATES if path.is_file()), None)
+
+
+def _browser_png(svg_path: Path, png_path: Path, width: int, height: int) -> None:
+    """Rasterize with a headless Edge/Chrome screenshot (used when Cairo is missing)."""
+
+    browser = _find_browser()
+    if browser is None:
+        raise RendererError("no CairoSVG and no Edge/Chrome browser found")
+    with tempfile.TemporaryDirectory() as profile:  # Never touches the user's browser profile.
+        subprocess.run(
+            [str(browser), "--headless", "--disable-gpu", "--hide-scrollbars",
+             "--force-device-scale-factor=1", f"--user-data-dir={profile}",
+             f"--window-size={width},{height}", f"--screenshot={png_path}", svg_path.as_uri()],
+            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=90, check=False,
+        )
+    if not png_path.is_file() or png_path.stat().st_size == 0:
+        raise RendererError(f"{browser.name} did not produce a PNG")
+
+
+def save_timestamped_png(svg_path: Path, svg_bytes: bytes, plan: dict[str, Any]) -> Path | None:
+    """Store a PNG of the final SVG beside it, named by generation time.
+
+    Best effort: a failure is reported and the SVG result is kept unchanged.
+    """
+
+    png_path = timestamped_png_path(svg_path.parent)
+    try:
+        try:
+            render_png(svg_bytes, png_path)
+        except RendererError:
+            canvas = plan.get("canvas") or {}
+            width = math.ceil(_finite_number(canvas.get("width"), field="canvas.width", minimum=1))
+            height = math.ceil(_finite_number(canvas.get("height"), field="canvas.height", minimum=1))
+            _browser_png(svg_path, png_path, width, height)
+    except (RendererError, OSError, ValueError, subprocess.SubprocessError) as exc:
+        print(f"[Renderer] Timestamped PNG not saved ({exc}); the SVG is unaffected.")
+        return None
+    print(f"[Renderer] Timestamped PNG saved: {png_path}")
+    return png_path
 
 
 def parse_arguments(argv: list[str] | None = None) -> argparse.Namespace:

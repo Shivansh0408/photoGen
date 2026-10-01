@@ -13,21 +13,28 @@ NAME_PATTERN = re.compile(
     re.IGNORECASE
 )
 
+# Only the attributes of the root <svg> tag describe the image size. The
+# lookbehind stops 'stroke-width' (or a child shape's width) from matching.
+ROOT_SVG_PATTERN = re.compile(
+    r'<svg\b[^>]*>',
+    re.IGNORECASE
+)
+
 WIDTH_PATTERN = re.compile(
-    r'\bwidth\s*=\s*["\']([^"\']+)["\']',
+    r'(?<![\w:-])width\s*=\s*["\']([^"\']+)["\']',
     re.IGNORECASE
 )
 
 HEIGHT_PATTERN = re.compile(
-    r'\bheight\s*=\s*["\']([^"\']+)["\']',
+    r'(?<![\w:-])height\s*=\s*["\']([^"\']+)["\']',
     re.IGNORECASE
 )
 
 VIEWBOX_PATTERN = re.compile(
     r'\bviewBox\s*=\s*["\']\s*'
-    r'(-?\d+(?:\.\d+)?)\s+'
-    r'(-?\d+(?:\.\d+)?)\s+'
-    r'(-?\d+(?:\.\d+)?)\s+'
+    r'(-?\d+(?:\.\d+)?)[\s,]+'
+    r'(-?\d+(?:\.\d+)?)[\s,]+'
+    r'(-?\d+(?:\.\d+)?)[\s,]+'
     r'(-?\d+(?:\.\d+)?)'
     r'\s*["\']',
     re.IGNORECASE
@@ -93,6 +100,9 @@ def convert_to_pixels(value):
 
 
 def extract_dimensions(xml_text):
+    root_match = ROOT_SVG_PATTERN.search(xml_text)
+    xml_text = root_match.group(0) if root_match else xml_text
+
     width_match = WIDTH_PATTERN.search(xml_text)
     height_match = HEIGHT_PATTERN.search(xml_text)
 
@@ -150,7 +160,9 @@ def extract_dimensions(xml_text):
     }
 
 
-def get_svg_assets():
+def get_svg_assets(folders=None):
+    """SVG files in Assets/ and its sub-folders (or only in the named sub-folders)."""
+
     if not ASSETS_DIR.exists():
         print(
             f"\nERROR: Assets directory does not exist:\n"
@@ -158,14 +170,29 @@ def get_svg_assets():
         )
         return []
 
+    roots = [ASSETS_DIR / folder for folder in folders] if folders else [ASSETS_DIR]
+    for root in roots:
+        if not root.is_dir():
+            print(f"\nERROR: Folder not found: {root.resolve()}")
+            return []
+
     return sorted(
-        [
+        {
             file_path
-            for file_path in ASSETS_DIR.iterdir()
+            for root in roots
+            for file_path in root.rglob("*")
             if file_path.is_file()
             and file_path.suffix.lower() == ".svg"
-        ]
+        },
+        key=lambda path: path.relative_to(ASSETS_DIR).as_posix().lower()
     )
+
+
+def asset_category(file_path):
+    """The sub-folder an asset lives in ('backgrounds', 'humans'); None for Assets/ itself."""
+
+    relative = file_path.relative_to(ASSETS_DIR)
+    return relative.parts[0].lower() if len(relative.parts) > 1 else None
 
 
 def escape_python_string(value):
@@ -245,6 +272,11 @@ def format_python_dictionary(data):
             f'        "usage": "{escape_python_string(asset["usage"])}",'
         )
 
+        if asset.get("category"):
+            lines.append(
+                f'        "category": "{escape_python_string(asset["category"])}",'
+            )
+
         dimensions = asset["dimensions"]
 
         lines.append(
@@ -306,7 +338,9 @@ def save_dictionary(data):
     )
 
 
-def main():
+def main(folders=None):
+    """Map new SVGs; ``folders`` limits the scan to those sub-folders of Assets/."""
+
     print("=" * 60)
     print("SVG ASSET DICTIONARY CREATOR")
     print("=" * 60)
@@ -324,7 +358,7 @@ def main():
         )
         return
 
-    assets = get_svg_assets()
+    assets = get_svg_assets(folders)
 
     if not assets:
         print(
@@ -419,6 +453,12 @@ def main():
             f"Name       : {asset_name}"
         )
 
+        category = asset_category(asset_path)
+        if category:
+            print(
+                f"Category   : {category}"
+            )
+
         print(
             f"Width      : {dimensions['width']} px"
         )
@@ -448,6 +488,7 @@ def main():
         svg_dictionary[filename] = {
             "name": asset_name,
             "usage": usage,
+            **({"category": category} if category else {}),
             "dimensions": {
                 "width": dimensions["width"],
                 "height": dimensions["height"],
@@ -489,4 +530,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    # Optional: only these sub-folders, e.g. python schema_creator.py backgrounds Humans
+    main(sys.argv[1:] or None)

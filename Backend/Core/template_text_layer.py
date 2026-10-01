@@ -352,7 +352,10 @@ def _plan_objects(plan: dict[str, Any]) -> list[PlanObject]:
         identifier = str(element.get("id") or f"element-{index + 1}")
         objects.append(PlanObject(identifier, identifier, str(element.get("asset", "")),
                                   index, Rect(x, y, w, h), rotation))
-    boxes = sorted((o for o in objects if re.search(r"box|card|panel", o.asset, re.I)),
+    # Whole words of the file name: 'InternalBOX' is a box, 'creditcard' and 'boxer' are not.
+    box_words = {"box", "boxes", "card", "cards", "panel", "panels"}
+    boxes = sorted((o for o in objects if box_words & {w.lower() for w in re.findall(
+                        r"[A-Z]+(?![a-z])|[A-Z]?[a-z]+", Path(o.asset).stem)}),
                    key=lambda o: (o.base.y, o.base.x))
     for number, box in enumerate(boxes, 1):
         box.label = f"box-{number}"

@@ -1,0 +1,6 @@
+# Generated images and plan files
+gen_assets/
+gen_bulk/
+
+# Source SVG assets (their contents are stored in Schema/asset_dictonary/svg_dictionary.py)
+Assets/
